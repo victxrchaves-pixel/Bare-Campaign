@@ -45,17 +45,19 @@ Contenido exacto del archivo:
 # Brief de Identidad Visual — Bare Campaign
 
 ## Paleta
-- Fondo principal: #0A0A0A (negro casi puro)
-- Texto principal: #FFFFFF (blanco puro)
-- Acento: #F5F4F0 (crema, para fondos alternativos)
+- Fondo principal: #FAFAFA (blanco roto — base de todas las piezas)
+- Texto principal / elemento dominante: #101010 (negro casi puro)
 - Nunca usar grises intermedios como protagonistas
+- Invertir paleta (fondo #101010 / texto #FAFAFA) solo en piezas de urgencia Mes 3 y videos TikTok
 
 ## Tipografía
-- Titular: Sans-serif bold condensada (ej. Arial Black, Helvetica Neue Black, o equivalente)
+- Titular: Switzer — peso Black o ExtraBold, MAYÚSCULAS
   - Tamaño: lo más grande que quepa con márgenes mínimos
-  - Casing: MAYÚSCULAS siempre en declaraciones principales
-- Subtítulo/firma: Sans-serif light o regular, tracking amplio (letter-spacing alto)
-  - Ejemplo: "bare · waitlist abierta" en versalitas
+  - Descargar en: fontshare.com/fonts/switzer (gratuita, uso comercial libre)
+- Cuerpo / texto secundario: Geist — peso Regular o Light
+  - Usar para subtítulos, firmas, CTAs y texto de carrusel
+  - Descargar en: vercel.com/font (gratuita, uso comercial libre)
+  - El nombre "bare" siempre en Geist, minúscula, tracking amplio
 
 ## Layout
 - Márgenes generosos: mínimo 8% del ancho total por lado
@@ -70,10 +72,10 @@ Contenido exacto del archivo:
 - IG Carrusel: 1:1, máximo 7 slides
 
 ## Reglas de producción
-1. Nunca usar más de 2 fuentes en una pieza
-2. El nombre "Bare" siempre en minúscula
+1. Nunca usar más de 2 fuentes en una pieza (Switzer + Geist)
+2. El nombre "bare" siempre en minúscula, en Geist
 3. Nunca añadir ilustraciones decorativas — solo tipografía y UI
-4. Si hay un CTA, va en la última línea, separado por un espacio o línea divisoria
+4. Si hay un CTA, va en la última línea en Geist, separado por espacio o línea fina #101010
 5. Ninguna pieza puede parecer un anuncio pagado — aspecto editorial siempre
 ```
 
