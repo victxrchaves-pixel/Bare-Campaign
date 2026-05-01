@@ -1,24 +1,24 @@
-# Bare — Plan de Implementación Campaña Prelanzamiento RRSS
+# Bare — Pre-Launch Campaign Implementation Plan
 
-> **Para quien ejecute este plan:** Completa cada tarea en orden. Cada tarea produce un entregable concreto (copies, briefs, calendarios). Marca cada paso al completarlo.
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Producir todos los contenidos, copies y calendarios de la campaña de prelanzamiento de Bare para Instagram y TikTok, con el objetivo de conseguir 200 personas en waitlist en 3 meses.
+**Goal:** Produce all content, copies, and calendars for Bare's pre-launch campaign on Instagram and TikTok, targeting 200 waitlist signups in 3 months.
 
-**Architecture:** 3 fases (Marca → Waitlist → Cierre) · 5 pilares de contenido · tono Manifiesto/Bold · FOMO con números reales.
+**Architecture:** 3 phases (Brand → Waitlist → Close) · 5 content pillars · Manifesto/Bold tone · FOMO with real numbers. All campaign copy is in English.
 
-**Entregables:** Documentos de copy, briefs visuales y calendarios semana a semana listos para producción.
+**Deliverables:** Copy documents, visual briefs, and week-by-week calendars ready for production.
 
 ---
 
-## Estructura de archivos
+## File structure
 
 ```
 Campaign/RRSS/
-├── docs/specs/2026-05-01-campana-prelanzamiento-design.md  ← spec aprobado
-├── docs/plans/2026-05-01-campana-prelanzamiento.md         ← este archivo
+├── docs/specs/2026-05-01-campana-prelanzamiento-design.md  ← approved spec
+├── docs/plans/2026-05-01-campana-prelanzamiento.md         ← this file
 ├── Mes1-Marca/
-│   ├── 01-brief-identidad-visual.md
-│   ├── 02-copies-manifiesto.md
+│   ├── 01-brief-identidad-visual.md      ✓ done
+│   ├── 02-copies-manifiesto.md           ✓ done
 │   ├── 03-brief-teaser-ui.md
 │   └── 04-calendario-semanas1-4.md
 ├── Mes2-Waitlist/
@@ -33,260 +33,70 @@ Campaign/RRSS/
 
 ---
 
-## Task 1: Brief de identidad visual
+## Task 1: Visual identity brief ✓
 
-**Archivo:** Crear `Mes1-Marca/01-brief-identidad-visual.md`
+**File:** `Mes1-Marca/01-brief-identidad-visual.md` — completed.
 
-- [ ] **Paso 1: Crear el brief visual**
+---
 
-Contenido exacto del archivo:
+## Task 2: Copy bank — Manifesto pillar ✓
+
+**File:** `Mes1-Marca/02-copies-manifiesto.md` — completed.
+
+---
+
+## Task 3: Teaser UI brief
+
+**File:** Create `Mes1-Marca/03-brief-teaser-ui.md`
+**Use:** Month 1 (weeks 1–4) and Month 3 as urgency backdrop
+
+- [ ] **Step 1: Create the brief**
 
 ```markdown
-# Brief de Identidad Visual — Bare Campaign
+# Brief — Teaser UI Pillar
 
-## Paleta
-- Fondo principal: #FAFAFA (blanco roto — base de todas las piezas)
-- Texto principal / elemento dominante: #101010 (negro casi puro)
-- Nunca usar grises intermedios como protagonistas
-- Invertir paleta (fondo #101010 / texto #FAFAFA) solo en piezas de urgencia Mes 3 y videos TikTok
+## Goal
+Show Bare's interface to generate product desire without revealing real users.
+Not a demo — a visual seduction.
 
-## Tipografía
-- Titular: Switzer — peso Regular, Medium o SemiBold, MAYÚSCULAS
-  - Tamaño: lo más grande que quepa con márgenes mínimos
-  - Descargar en: fontshare.com/fonts/switzer (gratuita, uso comercial libre)
-- Cuerpo / texto secundario: Geist — peso Regular o Light
-  - Usar para subtítulos, firmas, CTAs y texto de carrusel
-  - Descargar en: vercel.com/font (gratuita, uso comercial libre)
-  - El nombre "bare" siempre en Geist, minúscula, tracking amplio
+## Screens to show (by impact order)
 
-## Layout
-- Márgenes generosos: mínimo 8% del ancho total por lado
-- Nunca más de 7 palabras por línea en titulares
-- Alineación: izquierda o centrada — nunca justificada
-- Sin degradados, sin sombras, sin efectos
-- Si hay imagen: blanco y negro, alto contraste, nunca color
+### Screen 1 — Empty search
+The creator search view with visible filters: discipline, palette, technique, atmosphere.
+No results loaded. Only the filter architecture.
+Overlaid copy: "FILTER BY PALETTE. BY TECHNIQUE. BY ATMOSPHERE."
 
-## Proporción de formatos
-- IG Feed: 1:1 (1080×1080px) o 4:5 (1080×1350px)
-- IG Stories / TK: 9:16 (1080×1920px)
-- IG Carrusel: 1:1, máximo 7 slides
+### Screen 2 — Blank profile
+An empty creator profile, clean, with visible structure.
+Projects as empty blocks. The portfolio architecture.
+Overlaid copy: "YOUR WORK. ONE PLACE."
 
-## Reglas de producción
-1. Nunca usar más de 2 fuentes en una pieza (Switzer + Geist)
-2. El nombre "bare" siempre en minúscula, en Geist
-3. Nunca añadir ilustraciones decorativas — solo tipografía y UI
-4. Si hay un CTA, va en la última línea en Geist, separado por espacio o línea fina #101010
-5. Ninguna pieza puede parecer un anuncio pagado — aspecto editorial siempre
+### Screen 3 — The archive
+The curated inspiration module. Reference grid, no images.
+Only the structure and metadata of one reference (palette, technique, context).
+Overlaid copy: "INSPIRATION WITH CONTEXT. NOT ACCUMULATION."
+
+### Screen 4 — The access
+The review process screen. The project submission form.
+Overlaid copy: "YOU SUBMIT A PROJECT. WE REVIEW IT. YOU'RE IN OR YOU'RE NOT."
+
+## Visual treatment
+- All screens in dark mode
+- Convert to black and white if the design uses color
+- Overlay text in campaign typography (Switzer SemiBold, #FAFAFA, uppercase)
+- Add "bare" signature in Geist Light, bottom left corner
+
+## Formats per screen
+- 1 IG feed post (1080×1080px)
+- 1 story/TK vertical (1080×1920px) — animated text over the screen
+
+## Publishing cadence
+- 1 Teaser UI per week in Month 1
+- 2 Teaser UI in Month 3 (as urgency backdrop with closing copy)
+- Never publish two on the same day
 ```
 
-- [ ] **Paso 2: Commit**
-
-```bash
-git add Campaign/RRSS/Mes1-Marca/01-brief-identidad-visual.md
-git commit -m "feat: add visual identity brief for Bare campaign"
-```
-
----
-
-## Task 2: Banco de copies — Pilar Manifiesto
-
-**Archivo:** Crear `Mes1-Marca/02-copies-manifiesto.md`  
-**Uso:** Mes 1 (semanas 1–4) y Mes 3 (semanas 9–12)
-
-- [ ] **Paso 1: Crear el banco de copies**
-
-```markdown
-# Copies — Pilar Manifiesto
-
-Reglas de uso:
-- Máximo 1 post de Manifiesto cada 2 días en IG feed
-- En TK: pueden usarse como texto animado sobre fondo negro, 5–8 segundos
-- Nunca añadir explicación debajo — la declaración se sostiene sola
-- Firma siempre: "bare" en minúscula, con tracking amplio
-
----
-
-## Bloque A — Identidad (Mes 1, sin CTA)
-
-### A1
-```
-NO ES UN PORTFOLIO.
-NO ES UN MARKETPLACE.
-NO ES INSTAGRAM.
-
-bare
-```
-
-### A2
-```
-UNA SOLA PLATAFORMA.
-ACCESO POR REVISIÓN
-HUMANA.
-NADA MÁS.
-
-bare
-```
-
-### A3
-```
-BARE.
-PRONTO.
-```
-*(usar en la primera semana, antes de revelar nada)*
-
-### A4
-```
-EL TRABAJO BIEN HECHO
-ES ENCONTRABLE
-SIN PAGAR POR ELLO.
-
-bare
-```
-
-### A5
-```
-TU TRABAJO ENTRA.
-O NO.
-LO DECIDE UN EQUIPO,
-NO UN ALGORITMO.
-
-bare
-```
-
-### A6
-```
-AQUÍ NO HAY
-FRECUENCIA MÍNIMA.
-NO HAY LIKES.
-NO HAY FEED.
-
-bare
-```
-
-### A7
-```
-EL ACCESO SE GANA
-POR LO QUE HACES.
-NO POR LO QUE
-PUBLICAS.
-
-bare
-```
-
----
-
-## Bloque B — Urgencia (Mes 3, con CTA)
-
-### B1
-```
-QUEDAN [X] PLAZAS.
-BARE ABRE EL [FECHA].
-
-waitlist en bio
-```
-
-### B2
-```
-LA WAITLIST CIERRA
-ANTES DEL LANZAMIENTO.
-
-LOS QUE NO ESTÉN
-DENTRO, ESPERAN.
-
-bare · link en bio
-```
-
-### B3
-```
-[X] DE 200.
-YA CASI.
-
-bare · waitlist en bio
-```
-
-### B4
-```
-ÚLTIMAS SEMANAS.
-DESPUÉS, SOLO LISTA
-DE ESPERA.
-
-bare · waitlist en bio
-```
-
----
-
-## Para TikTok (adaptación texto animado)
-
-Cada declaración se convierte en texto apareciendo palabra a palabra sobre fondo negro.
-Duración: 5–8 segundos por declaración.
-Audio: silencio o sonido ambiente mínimo (sin música con letra).
-Cierre: "bare" aparece en último frame, permanece 2 segundos.
-
-Copies prioritarios para TK (los más directos):
-- A1, A2, A5, B2
-```
-
-- [ ] **Paso 2: Commit**
-
-```bash
-git add Campaign/RRSS/Mes1-Marca/02-copies-manifiesto.md
-git commit -m "feat: add manifiesto copy bank — blocks A and B"
-```
-
----
-
-## Task 3: Brief de Teaser UI
-
-**Archivo:** Crear `Mes1-Marca/03-brief-teaser-ui.md`  
-**Uso:** Mes 1 (semanas 1–4) y Mes 3 como fondo de urgencia
-
-- [ ] **Paso 1: Crear el brief**
-
-```markdown
-# Brief — Pilar Teaser UI
-
-## Objetivo
-Mostrar la interfaz de Bare para generar deseo del producto sin revelar usuarios reales.
-No es una demo — es una seducción visual.
-
-## Qué pantallas mostrar (por orden de impacto)
-
-### Pantalla 1 — El buscador vacío
-Vista del buscador de creativos con los filtros visibles: disciplina, paleta, técnica, atmósfera.
-Sin resultados cargados. Solo la arquitectura del filtro.
-Copy superpuesto: "FILTRA POR PALETA. POR TÉCNICA. POR ATMÓSFERA."
-
-### Pantalla 2 — El perfil en blanco
-Un perfil de creador vacío, limpio, con la estructura visible.
-Proyectos como bloques sin contenido. La arquitectura del portfolio.
-Copy superpuesto: "TU TRABAJO. EN UN SOLO LUGAR."
-
-### Pantalla 3 — El archivo
-Vista del módulo de inspiración curada. Grilla de referencias, sin imágenes.
-Solo la estructura y los metadatos de una referencia (paleta, técnica, contexto).
-Copy superpuesto: "INSPIRACIÓN CON CONTEXTO. NO ACUMULACIÓN."
-
-### Pantalla 4 — El acceso
-Pantalla del proceso de revisión. El formulario de envío de proyecto.
-Copy superpuesto: "ENVÍAS UN PROYECTO. LO REVISAMOS. ENTRAS O NO."
-
-## Tratamiento visual de las pantallas
-- Todas en modo oscuro
-- Convertir a blanco y negro si el diseño usa color
-- Superponer texto en tipografía de campaña (bold, blanco, mayúsculas)
-- Añadir firma "bare" en esquina inferior izquierda
-
-## Formatos a producir por pantalla
-- 1 post IG feed (1080×1080px)
-- 1 story/TK vertical (1080×1920px) — texto animado sobre la pantalla
-
-## Cadencia de publicación
-- 1 Teaser UI por semana en Mes 1
-- 2 Teaser UI en Mes 3 (como fondo de urgencia con copy de cierre)
-- Nunca publicar dos el mismo día
-```
-
-- [ ] **Paso 2: Commit**
+- [ ] **Step 2: Commit**
 
 ```bash
 git add Campaign/RRSS/Mes1-Marca/03-brief-teaser-ui.md
@@ -295,205 +105,205 @@ git commit -m "feat: add teaser UI brief with screen priorities"
 
 ---
 
-## Task 4: Calendario Mes 1 (Semanas 1–4)
+## Task 4: Month 1 Calendar (Weeks 1–4)
 
-**Archivo:** Crear `Mes1-Marca/04-calendario-semanas1-4.md`
+**File:** Create `Mes1-Marca/04-calendario-semanas1-4.md`
 
-- [ ] **Paso 1: Crear el calendario**
+- [ ] **Step 1: Create the calendar**
 
 ```markdown
-# Calendario Mes 1 — Construir Marca
-## Semanas 1–4 · Sin CTA de waitlist
+# Month 1 Calendar — Building Brand
+## Weeks 1–4 · No waitlist CTA yet
 
-Leyenda:
-- [M] = Manifiesto
+Legend:
+- [M] = Manifesto
 - [UI] = Teaser UI
 - [S] = Story
 
 ---
 
-## Semana 1 — Aparición
+## Week 1 — Appearance
 
-| Día | IG Feed | IG Stories | TikTok |
+| Day | IG Feed | IG Stories | TikTok |
 |---|---|---|---|
-| Lunes | [M] Copy A3 "BARE. PRONTO." | [S] Fondo negro, "bare" centrado | — |
-| Miércoles | — | [S] Detalle tipografía del logo | [M] A3 animado (5s) |
-| Viernes | [UI] Pantalla 1 — Buscador vacío | [S] Zoom al buscador | — |
+| Monday | [M] Copy A3 "BARE. COMING SOON." | [S] Black background, "bare" centered | — |
+| Wednesday | — | [S] Typography detail of the logo | [M] A3 animated (5s) |
+| Friday | [UI] Screen 1 — Empty search | [S] Zoom into the search | — |
 
-*Objetivo semana 1: que el nombre Bare empiece a circular sin contexto. Intriga pura.*
+*Week 1 goal: get the name Bare circulating without context. Pure intrigue.*
 
 ---
 
-## Semana 2 — Declaración
+## Week 2 — Declaration
 
-| Día | IG Feed | IG Stories | TikTok |
+| Day | IG Feed | IG Stories | TikTok |
 |---|---|---|---|
-| Lunes | [M] Copy A1 "NO ES UN PORTFOLIO..." | [S] Repetir copy A1 en formato vertical | [M] A1 animado (7s) |
-| Miércoles | [UI] Pantalla 2 — Perfil en blanco | [S] Detalle perfil vacío | — |
-| Viernes | [M] Copy A2 "UNA SOLA PLATAFORMA..." | [S] Copy A2 vertical | [M] A2 animado (8s) |
+| Monday | [M] Copy A1 "NOT A PORTFOLIO..." | [S] A1 in vertical format | [M] A1 animated (7s) |
+| Wednesday | [UI] Screen 2 — Blank profile | [S] Empty profile detail | — |
+| Friday | [M] Copy A2 "ONE PLATFORM..." | [S] A2 vertical | [M] A2 animated (8s) |
 
 ---
 
-## Semana 3 — Profundidad
+## Week 3 — Depth
 
-| Día | IG Feed | IG Stories | TikTok |
+| Day | IG Feed | IG Stories | TikTok |
 |---|---|---|---|
-| Lunes | [M] Copy A4 "EL TRABAJO BIEN HECHO..." | [S] A4 vertical | — |
-| Miércoles | [UI] Pantalla 3 — Archivo | [S] Zoom metadatos del archivo | [UI] Walkthrough archivo (15s) |
-| Viernes | [M] Copy A6 "AQUÍ NO HAY FRECUENCIA MÍNIMA..." | [S] A6 vertical | [M] A6 animado |
+| Monday | [M] Copy A4 "GREAT WORK IS FINDABLE..." | [S] A4 vertical | — |
+| Wednesday | [UI] Screen 3 — Archive | [S] Zoom archive metadata | [UI] Archive walkthrough (15s) |
+| Friday | [M] Copy A6 "NO MINIMUM POSTING FREQUENCY..." | [S] A6 vertical | [M] A6 animated |
 
 ---
 
-## Semana 4 — Acceso (anticipo)
+## Week 4 — Access (preview)
 
-| Día | IG Feed | IG Stories | TikTok |
+| Day | IG Feed | IG Stories | TikTok |
 |---|---|---|---|
-| Lunes | [M] Copy A5 "TU TRABAJO ENTRA O NO..." | [S] A5 vertical | [M] A5 animado |
-| Miércoles | [UI] Pantalla 4 — Proceso de acceso | [S] "La semana que viene, más." | — |
-| Viernes | [M] Copy A7 "EL ACCESO SE GANA..." | [S] Countdown 7 días para "algo" | [M] A7 animado |
+| Monday | [M] Copy A5 "YOUR WORK GETS IN OR IT DOESN'T..." | [S] A5 vertical | [M] A5 animated |
+| Wednesday | [UI] Screen 4 — Access process | [S] "Next week, more." | — |
+| Friday | [M] Copy A7 "ACCESS IS EARNED BY WHAT YOU MAKE..." | [S] 7-day countdown to "something" | [M] A7 animated |
 
-*Semana 4: empezar a insinuar que algo pasa la semana siguiente (apertura de waitlist). No decirlo explícitamente — solo el Story de Viernes con countdown.*
+*Week 4: start hinting something happens next week (waitlist opening). Don't say it explicitly — only the Friday Story with countdown.*
 
 ---
 
-## KPIs a seguir en Mes 1
-- Seguidores IG ganados: objetivo +250
-- Seguidores TK ganados: objetivo +150
-- Alcance total estimado: depende del punto de partida — anotar benchmark semana 1
-- Engagement rate objetivo IG: >4%
-- Engagement rate objetivo TK: >6%
+## Month 1 KPIs
+- IG followers gained: target +250
+- TK followers gained: target +150
+- Total estimated reach: depends on starting point — log benchmark week 1
+- IG engagement rate target: >4%
+- TK engagement rate target: >6%
 ```
 
-- [ ] **Paso 2: Commit**
+- [ ] **Step 2: Commit**
 
 ```bash
 git add Campaign/RRSS/Mes1-Marca/04-calendario-semanas1-4.md
-git commit -m "feat: add Mes1 content calendar weeks 1-4"
+git commit -m "feat: add Month 1 content calendar weeks 1-4"
 ```
 
 ---
 
-## Task 5: Copies — Pilar Explicativo
+## Task 5: Copies — Explicativo pillar
 
-**Archivo:** Crear `Mes2-Waitlist/05-copies-explicativo.md`  
-**Uso:** Mes 2 (semanas 5–8), formato carrusel IG y video TK
+**File:** Create `Mes2-Waitlist/05-copies-explicativo.md`
+**Use:** Month 2 (weeks 5–8), IG carousel format and TK video
 
-- [ ] **Paso 1: Crear copies**
+- [ ] **Step 1: Create copies**
 
 ```markdown
-# Copies — Pilar Explicativo
+# Copies — Explicativo Pillar
 
-## Carrusel IG — "Qué es Bare y cómo funciona" (7 slides)
+## IG Carousel — "What is Bare and how access works" (7 slides)
 
-**Slide 1 (portada):**
+**Slide 1 (cover):**
 ```
-QUÉ ES BARE
-Y CÓMO FUNCIONA
-EL ACCESO.
+WHAT IS BARE
+AND HOW ACCESS
+WORKS.
 ```
 
 **Slide 2:**
 ```
-BARE ES UNA PLATAFORMA
-PARA CREADORES VISUALES.
+BARE IS A PLATFORM
+FOR VISUAL CREATORS.
 
-Archivo de inspiración.
-Portfolio profesional.
-Directorio de contacto.
+Inspiration archive.
+Professional portfolio.
+Contact directory.
 
-Todo en un lugar.
+One place.
 ```
 
 **Slide 3:**
 ```
-NO ES ABIERTA.
+IT'S NOT OPEN.
 
-Para entrar, envías
-un proyecto.
-Lo revisa un equipo.
-Entras o no.
+To get in, you submit
+a project.
+A team reviews it.
+You're in or you're not.
 ```
 
 **Slide 4:**
 ```
-¿QUÉ SE EVALÚA?
+WHAT DO WE EVALUATE?
 
-La calidad del trabajo.
-La coherencia de la propuesta.
-Nada más.
+The quality of the work.
+The coherence of the proposal.
+Nothing else.
 
-No el número de seguidores.
-No el tiempo en el sector.
+Not your follower count.
+Not your years in the field.
 ```
 
 **Slide 5:**
 ```
-UNA VEZ DENTRO:
+ONCE INSIDE:
 
-— Tu portfolio organizado
-  por proyectos completos.
+— Your portfolio organized
+  by complete projects.
 
-— Un archivo de referencias
-  filtrable por paleta, técnica
-  y atmósfera.
+— An inspiration archive
+  filterable by palette, technique
+  and atmosphere.
 
-— Contacto directo con clientes
-  y otros creadores.
-  Sin intermediarios.
+— Direct contact with clients
+  and other creators.
+  No intermediaries.
 ```
 
 **Slide 6:**
 ```
-LA BÚSQUEDA FUNCIONA
-DE OTRA FORMA.
+SEARCH WORKS
+DIFFERENTLY HERE.
 
-Un cliente busca:
-"Ilustración · paleta tierra · 
-proceso a mano · atmósfera calmada"
+A client searches:
+"Illustration · earth palette ·
+hand process · calm atmosphere"
 
-Y encuentra exactamente eso.
-No el perfil más seguido.
-El trabajo más preciso.
+And finds exactly that.
+Not the most followed profile.
+The most precise work.
 ```
 
 **Slide 7 (CTA):**
 ```
-WAITLIST ABIERTA.
-30 PLAZAS ESTA SEMANA.
+WAITLIST OPEN.
+30 SPOTS THIS WEEK.
 
-bare · link en bio
+bare · link in bio
 ```
 
 ---
 
-## Video TK — "Por qué la revisión humana" (30–45s)
+## TK Video — "Why human review" (30–45s)
 
-**Guión:**
+**Script:**
 
-[0–5s] Texto en pantalla: "¿Por qué no puede entrar cualquiera?"
-[5–15s] Voz en off o texto animado:
-"Porque si entra cualquiera, el nivel del conjunto baja.
-Y Bare existe exactamente para que eso no pase."
-[15–25s] Texto: "Envías un proyecto. Lo revisamos.
-No buscamos el más famoso. Buscamos el más riguroso."
-[25–35s] Texto: "Si no entras ahora, puedes volver a intentarlo."
-[35–45s] CTA: "Waitlist abierta. 30 plazas esta semana. Link en bio."
+[0–5s] Text on screen: "Why can't anyone get in?"
+[5–15s] Voice over or animated text:
+"Because if anyone gets in, the overall level drops.
+And Bare exists exactly so that doesn't happen."
+[15–25s] Text: "You submit a project. We review it.
+We're not looking for the most famous. We're looking for the most rigorous."
+[25–35s] Text: "If you don't get in now, you can try again."
+[35–45s] CTA: "Waitlist open. 30 spots this week. Link in bio."
 
 ---
 
-## Video TK — "Qué pasa cuando entras" (20–30s)
+## TK Video — "What happens when you get in" (20–30s)
 
-**Guión:**
+**Script:**
 
-[0–5s] "Esto es lo que tienes cuando entras en Bare."
-[5–10s] Pantalla: buscador con filtros
-[10–15s] Pantalla: perfil con proyectos
-[15–20s] Pantalla: archivo de referencias
-[20–25s] "Sin algoritmo. Sin frecuencia mínima. Solo tu trabajo."
-[25–30s] CTA: "Waitlist. Link en bio."
+[0–5s] "This is what you get when you're inside Bare."
+[5–10s] Screen: search with filters
+[10–15s] Screen: profile with projects
+[15–20s] Screen: inspiration archive
+[20–25s] "No algorithm. No minimum frequency. Just your work."
+[25–30s] CTA: "Waitlist. Link in bio."
 ```
 
-- [ ] **Paso 2: Commit**
+- [ ] **Step 2: Commit**
 
 ```bash
 git add Campaign/RRSS/Mes2-Waitlist/05-copies-explicativo.md
@@ -502,118 +312,118 @@ git commit -m "feat: add explicativo copies — IG carousel and TK scripts"
 
 ---
 
-## Task 6: Copies — Pilar FOMO / Escasez
+## Task 6: Copies — FOMO / Scarcity pillar
 
-**Archivo:** Crear `Mes2-Waitlist/06-copies-fomo.md`  
-**Uso:** Mes 2 (semanas 5–8) y Mes 3 (semanas 9–12)
+**File:** Create `Mes2-Waitlist/06-copies-fomo.md`
+**Use:** Month 2 (weeks 5–8) and Month 3 (weeks 9–12)
 
-- [ ] **Paso 1: Crear copies**
+- [ ] **Step 1: Create copies**
 
 ```markdown
-# Copies — Pilar FOMO / Escasez
+# Copies — FOMO / Scarcity Pillar
 
-## Regla de oro
-Los números siempre son reales. Nunca publicar un número que no sea el actual.
-Actualizar los templates cada semana con datos reales antes de publicar.
+## Golden rule
+Numbers are always real. Never publish a number that isn't the current one.
+Update templates each week with real data before publishing.
 
 ---
 
-## Templates de Story IG — Apertura de lote semanal
+## IG Story templates — Weekly batch opening
 
-### Apertura (lunes de cada semana, Mes 2)
+### Opening (Monday of each week, Month 2)
 ```
-ABRIMOS LOTE [N].
-30 PLAZAS ESTA SEMANA.
+BATCH [N] OPEN.
+30 SPOTS THIS WEEK.
 
-[día de cierre, ej: "Cierran el domingo."]
+[closing day, e.g. "Closes Sunday."]
 
-bare · waitlist en bio
-```
-
-### Mid-week (miércoles)
-```
-[X] PLAZAS OCUPADAS.
-QUEDAN [30-X].
-
-bare · link en bio
+bare · waitlist in bio
 ```
 
-### Cierre (domingo)
+### Mid-week (Wednesday)
 ```
-LOTE [N] CERRADO.
-[X] PLAZAS OCUPADAS DE 30.
+[X] SPOTS TAKEN.
+[30-X] LEFT.
 
-EL PRÓXIMO LOTE,
-EL LUNES.
+bare · link in bio
+```
+
+### Closing (Sunday)
+```
+BATCH [N] CLOSED.
+[X] OUT OF 30 SPOTS TAKEN.
+
+NEXT BATCH
+MONDAY.
 
 bare
 ```
 
 ---
 
-## Posts IG Feed — Hitos de waitlist
+## IG Feed posts — Waitlist milestones
 
-### Al llegar a 50 personas
+### At 50 signups
 ```
-50 DENTRO.
+50 INSIDE.
 
-QUEDAN 150 PLAZAS
-HASTA EL LANZAMIENTO.
+150 SPOTS LEFT
+UNTIL LAUNCH.
 
-bare · waitlist en bio
-```
-
-### Al llegar a 100 personas
-```
-LA MITAD.
-
-100 CREADORES
-YA EN BARE.
-
-100 PLAZAS MÁS.
-DESPUÉS, SOLO LISTA
-DE ESPERA.
-
-bare · waitlist en bio
+bare · waitlist in bio
 ```
 
-### Al llegar a 150 personas
+### At 100 signups
+```
+HALFWAY.
+
+100 CREATORS
+ALREADY IN BARE.
+
+100 MORE SPOTS.
+AFTER THAT,
+WAITLIST ONLY.
+
+bare · waitlist in bio
+```
+
+### At 150 signups
 ```
 150.
 
-50 PLAZAS PARA
-CERRAR LA WAITLIST.
+50 SPOTS LEFT
+TO CLOSE THE WAITLIST.
 
-bare · waitlist en bio
+bare · waitlist in bio
 ```
 
 ---
 
-## Videos TK — FOMO
+## TK Videos — FOMO
 
-### "Por qué cerramos la waitlist antes de lanzar" (20s)
-[0–5s] "Bare cierra la waitlist antes del lanzamiento."
-[5–10s] "No porque esté llena. Porque queremos que el primer día tenga el nivel correcto."
-[10–15s] "Los que estén dentro, entran el día 1."
-[15–20s] "Los que no, esperan. Waitlist en bio."
+### "Why we close the waitlist before launch" (20s)
+[0–5s] "Bare closes the waitlist before launch."
+[5–10s] "Not because it's full. Because we want day one to have the right level."
+[10–15s] "Those inside get in on day 1."
+[15–20s] "Those who don't, wait. Waitlist in bio."
 
-### Countdown final (Mes 3, 15s)
-[0–5s] "Quedan [X] plazas."
-[5–10s] "Bare abre el [fecha]."
-[10–15s] "Link en bio."
+### Final countdown (Month 3, 15s)
+[0–5s] "[X] spots left."
+[5–10s] "Bare launches [date]."
+[10–15s] "Link in bio."
 
 ---
 
-## Cadencia de publicación FOMO
+## FOMO publishing cadence
 
-| Semana | Lunes | Miércoles | Domingo |
+| Week | Monday | Wednesday | Sunday |
 |---|---|---|---|
-| 5–8 (Mes 2) | Story apertura lote | Story mid-week | Story cierre lote |
-| 9–11 (Mes 3) | Post feed hito | Story plazas restantes | Story urgencia |
-| 12 (última) | Post feed cierre | Story "últimas 24h" | Post cierre oficial |
+| 5–8 (Month 2) | Story batch opening | Story mid-week | Story batch closing |
+| 9–11 (Month 3) | Feed post milestone | Story spots remaining | Story urgency |
+| 12 (last) | Feed post closing | Story "last 24h" | Official closing post |
 ```
 
-- [ ] **Paso 2: Commit**
+- [ ] **Step 2: Commit**
 
 ```bash
 git add Campaign/RRSS/Mes2-Waitlist/06-copies-fomo.md
@@ -622,335 +432,334 @@ git commit -m "feat: add FOMO copy bank with weekly templates"
 
 ---
 
-## Task 7: Copies — Pilar Contraste
+## Task 7: Copies — Contrast pillar
 
-**Archivo:** Crear `Mes2-Waitlist/07-copies-contraste.md`  
-**Uso:** Mes 2 únicamente, máximo 1 pieza cada 2 semanas (total: 2 piezas)
+**File:** Create `Mes2-Waitlist/07-copies-contraste.md`
+**Use:** Month 2 only, maximum 1 piece every 2 weeks (total: 2 pieces)
 
-- [ ] **Paso 1: Crear copies**
+- [ ] **Step 1: Create copies**
 
 ```markdown
-# Copies — Pilar Contraste
+# Copies — Contrast Pillar
 
-## Reglas de uso
-- MÁXIMO 2 piezas en todo Mes 2 (semana 6 y semana 8)
-- Nunca en Mes 1 ni Mes 3
-- El problema es el telón de fondo — una frase, no un sermón
-- Siempre termina con Bare como respuesta directa
+## Usage rules
+- MAXIMUM 2 pieces in all of Month 2 (week 6 and week 8)
+- Never in Month 1 or Month 3
+- The problem is the backdrop — one sentence, not a lecture
+- Always ends with Bare as the direct answer
 
 ---
 
-## Pieza 1 — Semana 6 (IG feed)
+## Piece 1 — Week 6 (IG feed)
 
 ```
-TIENES 4 PESTAÑAS
-ABIERTAS MIENTRAS
-INTENTAS CREAR.
+YOU HAVE 4 TABS OPEN
+WHILE TRYING
+TO CREATE.
 
-BARE ES UNA.
+BARE IS ONE.
 
-waitlist en bio
+waitlist in bio
 ```
 
 **TK (20s):**
-[0–5s] "¿Cuántas apps tienes abiertas ahora mismo para gestionar tu trabajo?"
+[0–5s] "How many apps do you have open right now to manage your work?"
 [5–10s] "Pinterest. Behance. Instagram. LinkedIn."
-[10–15s] "Bare es una sola."
-[15–20s] "Waitlist en bio."
+[10–15s] "Bare is one."
+[15–20s] "Waitlist in bio."
 
 ---
 
-## Pieza 2 — Semana 8 (IG feed)
+## Piece 2 — Week 8 (IG feed)
 
 ```
-EL 78% DEL TIEMPO
-DE UN CREADOR VA
-A AUTOPROMOCIÓN.
+78% OF A CREATOR'S TIME
+GOES TO SELF-PROMOTION.
 
-EL 22% A CREAR.
+22% TO CREATING.
 
-BARE NO LO SOLUCIONA.
-PERO LO REDUCE.
+BARE WON'T FIX THAT.
+BUT IT REDUCES IT.
 
-waitlist en bio
+waitlist in bio
 ```
 
-**Nota:** Este copy usa el dato real de Hesmondhalgh (2013) del Marco Teórico.
-No inventar datos. Si se actualiza el dato, actualizar el copy.
+**Note:** This copy uses the real Hesmondhalgh (2013) data from the theoretical framework.
+Never fabricate data. If the stat is updated, update the copy.
 ```
 
-- [ ] **Paso 2: Commit**
+- [ ] **Step 2: Commit**
 
 ```bash
 git add Campaign/RRSS/Mes2-Waitlist/07-copies-contraste.md
-git commit -m "feat: add contraste copy — 2 pieces for Mes 2"
+git commit -m "feat: add contrast copy — 2 pieces for Month 2"
 ```
 
 ---
 
-## Task 8: Calendario Mes 2 (Semanas 5–8)
+## Task 8: Month 2 Calendar (Weeks 5–8)
 
-**Archivo:** Crear `Mes2-Waitlist/08-calendario-semanas5-8.md`
+**File:** Create `Mes2-Waitlist/08-calendario-semanas5-8.md`
 
-- [ ] **Paso 1: Crear el calendario**
+- [ ] **Step 1: Create the calendar**
 
 ```markdown
-# Calendario Mes 2 — Revelar + Waitlist
-## Semanas 5–8 · Apertura de waitlist en lotes de 30
+# Month 2 Calendar — Reveal + Waitlist
+## Weeks 5–8 · Waitlist opens in batches of 30
 
 ---
 
-## Semana 5 — Apertura
+## Week 5 — Opening
 
-| Día | IG Feed | IG Stories | TikTok |
+| Day | IG Feed | IG Stories | TikTok |
 |---|---|---|---|
-| Lunes | Carrusel "Qué es Bare" (7 slides) | Story apertura Lote 1: "30 plazas esta semana" | Video "Qué pasa cuando entras" (20s) |
-| Miércoles | — | Story mid-week: "[X] plazas ocupadas, quedan [Y]" | — |
-| Viernes | [M] Copy A5 (recordatorio identidad) | — | Video "Por qué la revisión humana" (40s) |
-| Domingo | — | Story cierre Lote 1 | — |
+| Monday | Carousel "What is Bare" (7 slides) | Story Batch 1 opening: "30 spots this week" | Video "What happens when you get in" (20s) |
+| Wednesday | — | Story mid-week: "[X] spots taken, [Y] left" | — |
+| Friday | [M] Copy A5 (identity reminder) | — | Video "Why human review" (40s) |
+| Sunday | — | Story Batch 1 closing | — |
 
-*Acción previa semana 5: publicar Story el domingo de la semana 4 con "Mañana abrimos algo."*
+*Pre-action week 5: publish a Story on Sunday of week 4 with "Tomorrow we open something."*
 
 ---
 
-## Semana 6 — Contraste + Lote 2
+## Week 6 — Contrast + Batch 2
 
-| Día | IG Feed | IG Stories | TikTok |
+| Day | IG Feed | IG Stories | TikTok |
 |---|---|---|---|
-| Lunes | — | Story apertura Lote 2 | — |
-| Miércoles | [C] Pieza contraste 1 "4 PESTAÑAS ABIERTAS" | Story mid-week plazas | [C] TK contraste 1 (20s) |
-| Viernes | [UI] Pantalla 2 perfil (con CTA) | — | — |
-| Domingo | — | Story cierre Lote 2 | — |
+| Monday | — | Story Batch 2 opening | — |
+| Wednesday | [C] Contrast piece 1 "4 TABS OPEN" | Story mid-week spots | [C] TK contrast 1 (20s) |
+| Friday | [UI] Screen 2 profile (with CTA) | — | — |
+| Sunday | — | Story Batch 2 closing | — |
 
 ---
 
-## Semana 7 — Hito 50/100 + Lote 3
+## Week 7 — Milestone 50/100 + Batch 3
 
-| Día | IG Feed | IG Stories | TikTok |
+| Day | IG Feed | IG Stories | TikTok |
 |---|---|---|---|
-| Lunes | — | Story apertura Lote 3 | — |
-| Miércoles | Post hito (50 o 100 según avance real) | Story mid-week | Video TK "Por qué cerramos antes de lanzar" |
-| Viernes | [M] Copy A7 con CTA | — | — |
-| Domingo | — | Story cierre Lote 3 | — |
+| Monday | — | Story Batch 3 opening | — |
+| Wednesday | Milestone post (50 or 100 per real count) | Story mid-week | TK video "Why we close before launch" |
+| Friday | [M] Copy A7 with CTA | — | — |
+| Sunday | — | Story Batch 3 closing | — |
 
 ---
 
-## Semana 8 — Contraste 2 + Lote 4 + anticipo Mes 3
+## Week 8 — Contrast 2 + Batch 4 + Month 3 preview
 
-| Día | IG Feed | IG Stories | TikTok |
+| Day | IG Feed | IG Stories | TikTok |
 |---|---|---|---|
-| Lunes | — | Story apertura Lote 4 | — |
-| Miércoles | [C] Pieza contraste 2 "78% autopromoción" | Story mid-week | [C] TK contraste 2 |
-| Viernes | Post: "El mes que viene, cerramos." | Story: "Próximo mes, countdown." | TK: anticipo cierre |
-| Domingo | — | Story cierre Lote 4 | — |
+| Monday | — | Story Batch 4 opening | — |
+| Wednesday | [C] Contrast piece 2 "78% self-promotion" | Story mid-week | [C] TK contrast 2 |
+| Friday | Post: "Next month, we close." | Story: "Next month, countdown." | TK: closing preview |
+| Sunday | — | Story Batch 4 closing | — |
 
 ---
 
-## KPIs a seguir en Mes 2
-- Plazas waitlist ocupadas: objetivo 120 al final de semana 8
-- Tasa de conversión visita bio → waitlist: registrar desde semana 5
-- Lotes agotados en <72h: objetivo 3 de 4 lotes
-- Seguidores IG: +400 acumulados desde inicio
-- Seguidores TK: +250 acumulados desde inicio
+## Month 2 KPIs
+- Waitlist spots filled: target 120 by end of week 8
+- Bio visit → waitlist conversion rate: log from week 5
+- Batches sold out in <72h: target 3 out of 4 batches
+- IG followers: +400 cumulative from start
+- TK followers: +250 cumulative from start
 ```
 
-- [ ] **Paso 2: Commit**
+- [ ] **Step 2: Commit**
 
 ```bash
 git add Campaign/RRSS/Mes2-Waitlist/08-calendario-semanas5-8.md
-git commit -m "feat: add Mes2 content calendar weeks 5-8"
+git commit -m "feat: add Month 2 content calendar weeks 5-8"
 ```
 
 ---
 
-## Task 9: Copies — Urgencia y Cierre
+## Task 9: Copies — Urgency and Closing
 
-**Archivo:** Crear `Mes3-Cierre/09-copies-urgencia.md`
+**File:** Create `Mes3-Cierre/09-copies-urgencia.md`
 
-- [ ] **Paso 1: Crear copies**
+- [ ] **Step 1: Create copies**
 
 ```markdown
-# Copies — Mes 3: Urgencia y Cierre
+# Copies — Month 3: Urgency and Closing
 
-## Hitos de comunicación del Mes 3
+## Month 3 communication milestones
 
-### Inicio Mes 3 — "Último mes"
+### Month 3 start — "Last month"
 **IG Feed:**
 ```
-ÚLTIMO MES
-DE WAITLIST.
+LAST MONTH
+OF WAITLIST.
 
-DESPUÉS DE [FECHA CIERRE],
-SOLO LISTA DE ESPERA.
+AFTER [CLOSING DATE],
+WAITLIST ONLY.
 
-bare · link en bio
+bare · link in bio
 ```
 
 **TK (15s):**
-"Bare cierra la waitlist en [X] semanas.
-Después del [fecha], si no estás dentro, esperas.
-Link en bio."
+"Bare closes the waitlist in [X] weeks.
+After [date], if you're not in, you wait.
+Link in bio."
 
 ---
 
-### Semana 10 — Countdown visible
-**Story IG (publicar diariamente):**
+### Week 10 — Visible countdown
+**IG Story (publish daily):**
 ```
-[X] DÍAS PARA
-EL CIERRE.
+[X] DAYS TO
+CLOSING.
 
-[Y] PLAZAS RESTANTES.
+[Y] SPOTS LEFT.
 
-bare · link en bio
+bare · link in bio
 ```
 
 **IG Feed:**
 ```
-[X] PLAZAS.
-[Y] DÍAS.
+[X] SPOTS.
+[Y] DAYS.
 
-bare · waitlist en bio
+bare · waitlist in bio
 ```
 
 ---
 
-### Semana 11 — Últimas 30 plazas
+### Week 11 — Last 30 spots
 **IG Feed:**
 ```
-ÚLTIMAS 30 PLAZAS.
+LAST 30 SPOTS.
 
-BARE ABRE EL [FECHA].
-LA WAITLIST CIERRA
-ANTES.
+BARE LAUNCHES [DATE].
+THE WAITLIST CLOSES
+BEFORE THAT.
 
-bare · link en bio
+bare · link in bio
 ```
 
 **TK (20s):**
-"Quedan 30 plazas en la waitlist de Bare.
-Después de esto, lista de espera.
-La plataforma abre con quien esté dentro.
-Link en bio."
+"30 spots left in Bare's waitlist.
+After this, waitlist only.
+The platform launches with whoever is inside.
+Link in bio."
 
 ---
 
-### Cierre oficial — Día de cierre de waitlist
+### Official closing — Waitlist closing day
 **IG Feed:**
 ```
-WAITLIST CERRADA.
+WAITLIST CLOSED.
 
-200 CREADORES
-DENTRO.
+200 CREATORS
+INSIDE.
 
-BARE ABRE EL [FECHA].
+BARE LAUNCHES [DATE].
 ```
 
-**Story IG:**
+**IG Story:**
 ```
-CERRADO.
-NOS VEMOS EL [FECHA].
+CLOSED.
+SEE YOU ON [DATE].
 ```
 
 **TK (15s):**
-"La waitlist de Bare está cerrada.
-200 creadores dentro.
-Bare abre el [fecha].
-Gracias."
+"Bare's waitlist is closed.
+200 creators inside.
+Bare launches [date].
+Thank you."
 
 ---
 
-## Reglas de Mes 3
-1. Stories diarias desde semana 10 con días y plazas restantes (siempre datos reales)
-2. No publicar más de 1 post de feed de urgencia cada 3 días (evitar saturar)
-3. El tono se mantiene: sobrio, directo, nunca agresivo ni "¡última oportunidad!"
-4. El día del cierre: un solo post. Limpio. Sin celebración excesiva.
+## Month 3 rules
+1. Daily Stories from week 10 with days and spots remaining (always real data)
+2. No more than 1 urgency feed post every 3 days (avoid saturating)
+3. Tone stays: sober, direct, never aggressive or "last chance!"
+4. Closing day: one single post. Clean. No excessive celebration.
 ```
 
-- [ ] **Paso 2: Commit**
+- [ ] **Step 2: Commit**
 
 ```bash
 git add Campaign/RRSS/Mes3-Cierre/09-copies-urgencia.md
-git commit -m "feat: add urgency and closing copies for Mes3"
+git commit -m "feat: add urgency and closing copies for Month 3"
 ```
 
 ---
 
-## Task 10: Calendario Mes 3 (Semanas 9–12)
+## Task 10: Month 3 Calendar (Weeks 9–12)
 
-**Archivo:** Crear `Mes3-Cierre/10-calendario-semanas9-12.md`
+**File:** Create `Mes3-Cierre/10-calendario-semanas9-12.md`
 
-- [ ] **Paso 1: Crear el calendario**
+- [ ] **Step 1: Create the calendar**
 
 ```markdown
-# Calendario Mes 3 — Cierre y Urgencia
-## Semanas 9–12 · Countdown al lanzamiento
+# Month 3 Calendar — Closing and Urgency
+## Weeks 9–12 · Countdown to launch
 
 ---
 
-## Semana 9 — Inicio del countdown
+## Week 9 — Countdown starts
 
-| Día | IG Feed | IG Stories | TikTok |
+| Day | IG Feed | IG Stories | TikTok |
 |---|---|---|---|
-| Lunes | Post "Último mes de waitlist" | Story: "quedan [X] plazas" | TK "Cierre en 1 mes" (15s) |
-| Miércoles | [UI] Pantalla 1 con copy urgencia | Story: countdown días | — |
-| Viernes | [M] Copy B1 (adaptado con fecha real) | Story countdown | [M] B1 animado |
+| Monday | Post "Last month of waitlist" | Story: "[X] spots left" | TK "Closing in 1 month" (15s) |
+| Wednesday | [UI] Screen 1 with urgency copy | Story: countdown days | — |
+| Friday | [M] Copy B1 (updated with real date) | Story countdown | [M] B1 animated |
 
 ---
 
-## Semana 10 — Subida de tensión
+## Week 10 — Tension rising
 
-| Día | IG Feed | IG Stories | TikTok |
+| Day | IG Feed | IG Stories | TikTok |
 |---|---|---|---|
-| Lunes | Post hito (150 si no se alcanzó antes) | Story diaria: días + plazas | TK countdown (15s) |
-| Miércoles | [M] Copy B2 "La waitlist cierra antes..." | Story diaria | — |
-| Viernes | [UI] Pantalla 4 proceso acceso + CTA urgente | Story diaria | TK "últimas semanas" |
+| Monday | Milestone post (150 if not yet reached) | Daily story: days + spots | TK countdown (15s) |
+| Wednesday | [M] Copy B2 "The waitlist closes before..." | Daily story | — |
+| Friday | [UI] Screen 4 access process + urgent CTA | Daily story | TK "last few weeks" |
 
 ---
 
-## Semana 11 — Últimas 30 plazas
+## Week 11 — Last 30 spots
 
-| Día | IG Feed | IG Stories | TikTok |
+| Day | IG Feed | IG Stories | TikTok |
 |---|---|---|---|
-| Lunes | Post "Últimas 30 plazas" | Story diaria | TK "quedan 30 plazas" (20s) |
-| Miércoles | [M] Copy B3 "[X] de 200" | Story diaria | — |
-| Viernes | Post: "La semana que viene, cerramos." | Story diaria | TK cierre próximo |
+| Monday | Post "Last 30 spots" | Daily story | TK "30 spots left" (20s) |
+| Wednesday | [M] Copy B3 "[X] out of 200" | Daily story | — |
+| Friday | Post: "Next week, we close." | Daily story | TK closing preview |
 
 ---
 
-## Semana 12 — Cierre
+## Week 12 — Closing
 
-| Día | IG Feed | IG Stories | TikTok |
+| Day | IG Feed | IG Stories | TikTok |
 |---|---|---|---|
-| Lunes | [M] Copy B4 "Últimas semanas" | Story: "quedan [X] días y [Y] plazas" | TK urgencia máxima (15s) |
-| Miércoles | — | Story: "últimas 48h" | TK: "últimas 48h" |
-| Jueves | — | Story: "últimas 24h" | — |
-| Viernes [CIERRE] | Post cierre oficial "WAITLIST CERRADA. 200 CREADORES DENTRO." | Story cierre | TK cierre (15s) |
+| Monday | [M] Copy B4 "Last few weeks" | Story: "[X] days and [Y] spots left" | TK max urgency (15s) |
+| Wednesday | — | Story: "last 48h" | TK: "last 48h" |
+| Thursday | — | Story: "last 24h" | — |
+| Friday [CLOSING] | Official closing post "WAITLIST CLOSED. 200 CREATORS INSIDE." | Closing story | TK closing (15s) |
 
 ---
 
-## KPIs a cerrar en Mes 3
-- Waitlist completada: 200 personas ✓
-- Último lote agotado antes del día de cierre
-- Seguidores IG al cierre: +1.000 desde inicio campaña
-- Seguidores TK al cierre: +500 desde inicio campaña
-- Tasa de lotes agotados en <72h durante Mes 3: objetivo 100%
+## Month 3 KPIs
+- Waitlist complete: 200 people ✓
+- Last batch sold out before closing day
+- IG followers at close: +1,000 from campaign start
+- TK followers at close: +500 from campaign start
+- Batches sold out in <72h during Month 3: target 100%
 ```
 
-- [ ] **Paso 2: Commit final**
+- [ ] **Step 2: Final commit**
 
 ```bash
 git add Campaign/RRSS/Mes3-Cierre/10-calendario-semanas9-12.md
-git commit -m "feat: add Mes3 content calendar weeks 9-12"
+git commit -m "feat: add Month 3 content calendar weeks 9-12"
 git push origin main
 ```
 
 ---
 
-## Checklist de prerequisitos antes de publicar
+## Prerequisites checklist before publishing
 
-- [ ] Mockups de UI de las 4 pantallas listos y en blanco/negro
-- [ ] Landing page / formulario de waitlist operativo
-- [ ] Sistema de gestión de plazas configurado (para contar en tiempo real)
-- [ ] Cuenta IG y TK creadas con bio y link en bio activos
-- [ ] Fecha de lanzamiento aproximada confirmada (necesaria desde Mes 3)
-- [ ] Cuenta para actualizar Stories de countdown diariamente en Mes 3
+- [ ] UI mockups for all 4 screens ready and in black and white
+- [ ] Landing page / waitlist form live and operational
+- [ ] Spot management system configured (for real-time counting)
+- [ ] IG and TK accounts created with bio and link in bio active
+- [ ] Approximate launch date confirmed (needed from Month 3)
+- [ ] Someone assigned to update daily countdown Stories in Month 3
