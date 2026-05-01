@@ -7,7 +7,7 @@
 - Invertir paleta puntualmente (fondo #101010 / texto #FAFAFA) solo en piezas de urgencia o countdown (Mes 3)
 
 ## Tipografía
-- **Titular:** Switzer — peso Black o ExtraBold, MAYÚSCULAS
+- **Titular:** Switzer — peso Regular, Medium o SemiBold, MAYÚSCULAS
   - Tamaño: lo más grande que quepa con márgenes mínimos
   - Usar para declaraciones principales, copies de manifiesto y hitos de waitlist
 - **Cuerpo / texto secundario:** Geist — peso Regular o Light
@@ -44,8 +44,8 @@
 ## Jerarquía visual por pilar
 | Pilar | Fondo | Titular | Secundario |
 |---|---|---|---|
-| Manifiesto | #FAFAFA | Switzer Black #101010 | Geist Light #101010 |
-| Teaser UI | #FAFAFA | Switzer Bold #101010 sobre captura UI | Geist Regular |
-| Explicativo (carrusel) | #FAFAFA | Switzer ExtraBold #101010 | Geist Regular #101010 |
-| FOMO / Urgencia | #FAFAFA o invertido #101010 | Switzer Black | Geist Light |
-| Contraste | #FAFAFA | Switzer Black #101010 | Geist Regular |
+| Manifiesto | #FAFAFA | Switzer SemiBold #101010 | Geist Light #101010 |
+| Teaser UI | #FAFAFA | Switzer Medium #101010 sobre captura UI | Geist Regular |
+| Explicativo (carrusel) | #FAFAFA | Switzer SemiBold #101010 | Geist Regular #101010 |
+| FOMO / Urgencia | #FAFAFA o invertido #101010 | Switzer SemiBold | Geist Light |
+| Contraste | #FAFAFA | Switzer SemiBold #101010 | Geist Regular |

@@ -51,7 +51,7 @@ Contenido exacto del archivo:
 - Invertir paleta (fondo #101010 / texto #FAFAFA) solo en piezas de urgencia Mes 3 y videos TikTok
 
 ## Tipografía
-- Titular: Switzer — peso Black o ExtraBold, MAYÚSCULAS
+- Titular: Switzer — peso Regular, Medium o SemiBold, MAYÚSCULAS
   - Tamaño: lo más grande que quepa con márgenes mínimos
   - Descargar en: fontshare.com/fonts/switzer (gratuita, uso comercial libre)
 - Cuerpo / texto secundario: Geist — peso Regular o Light
